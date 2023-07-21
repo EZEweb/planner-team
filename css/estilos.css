@@ -1,0 +1,242 @@
+body{
+    z-index: 1; 
+    color: #fff;
+    background: #393939;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+header img{
+    width: 180px;
+}
+ul li{
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 2%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    color: #56bffc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+h3{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: 0;
+}
+
+.elemento-uno{
+    margin: 25% 0 0 -15%;    
+    width: 420px;
+    position:absolute;
+    height: 420px;
+    flex-shrink: 0; 
+    border-radius: 100%;
+    background: linear-gradient(223deg, #68D7E0 0%, #68D7E0 100%);
+    filter: blur(170px);
+    z-index: -1;
+}
+.elemento-dos{
+    margin: 85% -40% 0 0;
+    width: 420px;
+    position:absolute;
+    height: 420px;
+    flex-shrink: 0; 
+    border-radius: 100%;
+    background: linear-gradient(223deg, #FCB556 0%, #F95545 100%);
+    filter: blur(150px);
+    z-index: -1;
+}
+header{
+    display: flex;
+    height: 70px;
+    padding: 0 2%;
+    margin: 1% 8%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 24px;
+    background: rgba(58, 58, 58, 0.30);
+    box-shadow: 0px 4px 10px 0px rgba(30, 30, 30, 0.20);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+hero{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+hero h1{
+    width: 50%;
+}
+hero div{
+    display: flex;
+    border-radius: 360px;
+    background: #3A3A3A;    
+    padding: 1% 4% 1% 2%;
+    text-align: center;
+}
+button{
+    width: 16%;
+    height: 45px;
+    padding: 8px;
+    background-color: #393939;
+    color: white;
+    padding: 1% 4%;
+    border: solid 2px #68D7E0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px 0px rgba(104, 215, 224, 0.20);
+    margin-top: 8%;
+}
+
+.titulo{
+    width: 64%;
+}
+section{
+    position: relative;
+    text-align: center;
+    padding: 0% 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servicios{
+    display: flex;
+    padding: 80px 0 0 0;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }  
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slidehero {
+    from {
+        margin-left: -100%;
+        width: 300%;
+        opacity: 0%;
+    }  
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 100%;
+    }
+}
+
+.servicios img{
+    width: 50%;
+}
+.clientes{
+    display: flex;
+    padding: 80px 0 0 0;
+}
+.clientes img{
+    width: 50%;
+}
+h1{
+    position:relative;
+    width: 100%;
+    z-index: 98;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 250%;
+    font-family: 'Montserrat', sans-serif;
+}
+form{
+    width: 60%;
+}
+form h4{
+    padding: 1% 0 0 0;
+}
+input{
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    background-color: #393939;
+    padding: 2% 2%;
+    width: 100%;
+}
+textarea{
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background-color: #393939;
+    padding: 2% 2%;
+    width: 100%;
+}
+footer{
+    border-radius: 32px;
+    display: flex;
+    padding: 120px 5% 120px 10%;
+    margin:4%;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(237, 237, 237, 0.25);
+    font-family: 'Montserrat', sans-serif;
+    gap: 36px;
+}
+footer img{
+    width: 180px;
+}
+footer div{
+    display: flex;
+    align-items:flex-start;
+    gap: 4%;
+    width: 100%;
+}
+.rrss{
+    display: grid;
+}
+.rrss img{
+    width: 35px;
+    padding: 5px;
+}
