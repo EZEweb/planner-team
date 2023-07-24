@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth;
+}
 body{
     z-index: 1; 
     color: #fff;
@@ -33,10 +36,18 @@ ul li{
     font-family: 'Montserrat', sans-serif;
     padding: 0 2%;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
 ul{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
 }
 a{
     color: #56bffc;
@@ -68,7 +79,7 @@ h3{
     z-index: -1;
 }
 .elemento-dos{
-    margin: 85% -40% 0 0;
+    margin: 85% 0 0 0;
     width: 420px;
     position:absolute;
     height: 420px;
@@ -115,10 +126,9 @@ hero div{
     text-align: center;
 }
 button{
-    width: 16%;
     height: 45px;
     padding: 8px;
-    background-color: #393939;
+    background-color: #000000;
     color: white;
     padding: 1% 4%;
     border: solid 2px #68D7E0;
@@ -126,9 +136,9 @@ button{
     box-shadow: 0px 4px 10px 0px rgba(104, 215, 224, 0.20);
     margin-top: 8%;
 }
-
 .titulo{
     width: 64%;
+    padding-top: 240px;
 }
 section{
     position: relative;
@@ -137,13 +147,29 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
 }
-.servicios{
+.servicios-izq{
+    text-align: left;
     display: flex;
     padding: 80px 0 0 0;
-    animation-duration: 1.5s;
-    animation-name: slidein;
     gap: 5%;
+}
+.servicios-der{
+    text-align: right;
+    display: flex;
+    padding: 80px 0 0 0;
+    gap: 5%;
+}
+
+.servicios-izq img{
+    width: 50%;
+    border-radius: 80px 0 0 80px;
+}
+
+.servicios-der img{
+    width: 50%;
+    border-radius: 0 80px 80px 0;
 }
 
 @keyframes slidein {
@@ -170,15 +196,35 @@ section{
     }
 }
 
-.servicios img{
-    width: 50%;
-}
-.clientes{
+.clientes-izq{
     display: flex;
     padding: 80px 0 0 0;
+    text-align: left;
+    padding: 0 0 0 2%;
+    gap: 40px;
 }
-.clientes img{
+.clientes-der{
+    display: flex;
+    padding: 80px 0 0 0;
+    text-align: right;
+    padding: 0 2% 0 0;
+    gap: 40px;
+}
+
+.clientes-izq img{
     width: 50%;
+    border-radius: 0 180px 0 180px;
+}
+
+.clientes-der img{
+    width: 50%;
+    border-radius: 180px 0 180px 0;
+}
+.clientes-der button img{
+    border-radius: 0px;
+}
+.clientes-izq button img{
+    border-radius: 0px;
 }
 h1{
     position:relative;
@@ -194,11 +240,13 @@ h1{
     font-size: 250%;
     font-family: 'Montserrat', sans-serif;
 }
+.contacto{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
 form{
     width: 60%;
-}
-form h4{
-    padding: 1% 0 0 0;
 }
 input{
     border-radius: 12px;
@@ -240,4 +288,95 @@ footer div{
 .rrss img{
     width: 35px;
     padding: 5px;
+}
+
+@media (max-width: 60em) {
+  }
+  
+@media (max-width: 40em) {
+    hero h1{
+        width: 80%;
+    }
+    button{
+        width: 32%;
+    }
+    .titulo{
+        width: 96%;
+    }
+    section{
+        text-align: center;
+        width: 96%;
+        padding: 2%;
+        gap: 80px;
+    }
+    .servicios-der{
+        display: grid;
+        text-align: center;
+        padding: 80px 0 0 0;
+        gap: 5%;
+    }
+    .servicios-izq{
+        display: grid;
+        text-align: center;
+        padding: 80px 0 0 0;
+        gap: 5%;
+    }
+    .servicios-izq img{
+        width: 96%;
+        border-radius: 80px;
+    }
+    .servicios-der img{
+        width: 96%;
+        border-radius: 80px;
+    }
+    .clientes-der{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .clientes-izq{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }  
+    .clientes-der img{
+        width: 96%;
+    }
+    .clientes-izq img{
+        width: 96%;
+    }
+    .clientes-der button{
+        width: 75px;
+        height: 55px;
+    }
+    .clientes-izq button{
+        width: 75px;
+        height: 55px;
+    }
+    form{
+        width: 90%;
+    }
+    footer{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        width:96%;
+        height: 100%;
+        padding: 10% 0;
+        margin: 1%;
+        color: black;
+    }
+    footer div{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        padding: 5% 0;
+    }
+    footer div{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
 }
