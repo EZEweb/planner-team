@@ -11,6 +11,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    overflow-x: hidden;
 }
 h4{
     font-family: 'Montserrat', sans-serif;
@@ -68,22 +69,43 @@ h3{
 }
 
 .elemento-uno{
-    margin: 25% 0 0 -15%;    
+    display: grid;
+    position: absolute;
     width: 420px;
-    position:absolute;
     height: 420px;
-    flex-shrink: 0; 
     border-radius: 100%;
     background: linear-gradient(223deg, #68D7E0 0%, #68D7E0 100%);
     filter: blur(170px);
     z-index: -1;
 }
 .elemento-dos{
-    margin: 85% 0 0 0;
+    display: grid;
+    position: absolute;
+    margin: 50% 0 0 65%;
     width: 420px;
-    position:absolute;
     height: 420px;
-    flex-shrink: 0; 
+    border-radius: 100%;
+    background: linear-gradient(223deg, #FCB556 0%, #F95545 100%);
+    filter: blur(150px);
+    z-index: -1;
+}
+.elemento-tres{
+    display: grid;
+    position: absolute;
+    margin: 150% 0 0 0;
+    width: 420px;
+    height: 420px;
+    border-radius: 100%;
+    background: linear-gradient(223deg, #68D7E0 0%, #68D7E0 100%);
+    filter: blur(170px);
+    z-index: -1;
+}
+.elemento-cuatro{
+    display: grid;
+    position: absolute;
+    margin: 250% 0 0 65%;
+    width: 420px;
+    height: 420px;
     border-radius: 100%;
     background: linear-gradient(223deg, #FCB556 0%, #F95545 100%);
     filter: blur(150px);
@@ -110,10 +132,11 @@ hero{
     display: flex;
     justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+    height: 600px;
 }
 hero h1{
     width: 50%;
@@ -124,6 +147,16 @@ hero div{
     background: #3A3A3A;    
     padding: 1% 4% 1% 2%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+}
+hero .slide{
+    width: 48%;
+    height: 100%;
+}
+.bt-menu{
+    display: none;
 }
 button{
     height: 45px;
@@ -135,6 +168,8 @@ button{
     border-radius: 12px;
     box-shadow: 0px 4px 10px 0px rgba(104, 215, 224, 0.20);
     margin-top: 8%;
+    display: flex;
+    align-items: center;
 }
 .titulo{
     width: 64%;
@@ -290,10 +325,25 @@ footer div{
     padding: 5px;
 }
 
-@media (max-width: 60em) {
+.rrss div {
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .bt-menu{
+        display:flex;
+        float: right;
+    }
+    ul{
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        left: -100%;
+        display: grid;
+    }
   }
   
-@media (max-width: 40em) {
+@media (max-width: 400px) {
     hero h1{
         width: 80%;
     }
