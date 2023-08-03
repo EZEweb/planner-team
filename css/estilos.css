@@ -341,6 +341,34 @@ footer div{
         left: -100%;
         display: grid;
     }
+    .titulo{
+        width: 100%;
+        padding-top: 240px;
+    }
+    .servicios-der{
+        display: grid;
+        text-align: center;
+        padding: 80px 0 0 0;
+        gap: 5%;
+    }
+    .servicios-izq{
+        display: grid;
+        text-align: center;
+        padding: 80px 0 0 0;
+        gap: 5%;
+    }
+    .servicios-izq img{
+        display: flex;
+        gap: 5%;
+        width: 100%;
+        border-radius: 32px;
+    }
+    .servicios-der img{
+        display: flex;
+        gap: 5%;
+        width: 100%;
+        border-radius: 32px;
+    }
   }
   
 @media (max-width: 400px) {
