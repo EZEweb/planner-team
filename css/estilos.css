@@ -376,7 +376,7 @@ footer div{
         text-align: center;
         padding: 80px 0 0 0;
         gap: 5%;
-    }    
+    }
     .servicios-der-mob{
         display: grid;
         text-align: center;
@@ -439,11 +439,11 @@ footer div{
     }
     .servicios-izq img{
         width: 96%;
-        border-radius: 80px;
+        border-radius: 32px;
     }
     .servicios-der img{
         width: 96%;
-        border-radius: 80px;
+        border-radius: 32px;
     }
     .clientes-der{
         display: none;
