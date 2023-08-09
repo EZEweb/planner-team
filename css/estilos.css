@@ -115,7 +115,7 @@ header{
     display: flex;
     height: 70px;
     padding: 0 2%;
-    margin: 1% 8%;
+    margin: 1% 8% 120px 8%;
     justify-content: space-around;
     align-items: center;
     border-radius: 24px;
@@ -135,7 +135,7 @@ hero{
     flex-wrap:nowrap;
     justify-content: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 45px;
     height: auto;
 }
 hero h1{
@@ -161,13 +161,13 @@ hero .slide{
 button{
     height: 45px;
     padding: 8px;
-    background-color: #000000;
+    background-color: #393939;
     color: white;
     padding: 1% 4%;
     border: solid 2px #68D7E0;
     border-radius: 12px;
     box-shadow: 0px 4px 10px 0px rgba(104, 215, 224, 0.20);
-    margin-top: 8%;
+    margin-top: 4%;
     display:inline;
     align-items: center;
 }
@@ -333,6 +333,7 @@ footer div{
 
 .rrss div {
     align-items: center;
+    display: flex;
 }
 
 .slide-mobile{
@@ -412,9 +413,11 @@ footer div{
 @media (max-width: 550px) {
     hero h1{
         width: 80%;
+        font-size: 200%;
     }
     button{
-        width: 32%;
+        width: auto;
+        height: auto;
     }
     .titulo{
         width: 96%;
