@@ -11,7 +11,6 @@ function main(){
             });
             contador=1;
         }else{
-            contador=1;
             $('nav').animate({
                 left: '-100%'
             });

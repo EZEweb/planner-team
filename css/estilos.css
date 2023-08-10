@@ -344,7 +344,7 @@ footer div{
     header nav{
         display: none;
         width:80%;
-        height:300%;
+        height:200%;
 		margin:0;
         background-color: rgba(58, 58, 58, 0.30);
     }
@@ -364,8 +364,8 @@ footer div{
     }
     ul{
         width: 100%;
-        height: 80%;
         margin: 0;
+        padding: 0;
         display: grid;
     }
     .titulo{
@@ -411,6 +411,27 @@ footer div{
   }
   
 @media (max-width: 550px) {
+    header{
+        width:80%;
+        height:80%;
+        padding: 10% 0;
+        background-color: rgba(58, 58, 58, 0.30);
+    }
+    header nav{
+        position: absolute;
+        width: 60%;
+        background-color: #393939;
+        z-index: 999;
+    }
+    header nav ul{
+        justify-content: unset;
+        gap: 50%;
+        padding: 25% 0 0 10%;
+
+    }
+    header nav ul li a{
+        font-weight: 800;
+    }
     hero h1{
         width: 80%;
         font-size: 200%;
