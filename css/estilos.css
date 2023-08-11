@@ -340,27 +340,27 @@ footer div{
     display: none;
 }
 
-@media (max-width: 800px) {
-    header nav{
-        display: none;
-        width:80%;
-        height:200%;
-		margin:0;
-        background-color: rgba(58, 58, 58, 0.30);
-    }
-    hero{
-        z-index: -3;
-    }
-    .slide-mobile{
-        display: flex;
-        width: 80%;
-    }
-    .slide{
-        display: none;
-    }
+@media (max-width: 800px){
     .bt-menu{
         display:flex;
         float: right;
+    }
+    header{
+        margin-bottom:40px;
+    }
+    header nav{
+        display: none;
+        position: absolute;
+        background-color: #393939;
+        width:60%;
+        height:200%;
+		margin:0;
+        z-index: 999;
+    }
+    header nav ul{
+        justify-content: unset;
+        gap: 50%;
+        padding: 25% 0 0 10%;
     }
     ul{
         width: 100%;
@@ -368,69 +368,111 @@ footer div{
         padding: 0;
         display: grid;
     }
-    .titulo{
-        width: 100%;
-        padding-top: 240px;
+    header nav ul li a{
+        font-weight: 800;
     }
-    .servicios-der{
+    #servicios .titulo{
+        width: 96%;
         display: grid;
-        text-align: center;
-        padding: 80px 0 0 0;
-        gap: 5%;
+        justify-items: center;
+        gap: 8%;
     }
-    .servicios-der-mob{
-        display: grid;
-        text-align: center;
-        padding: 80px 0 0 0;
-        gap: 5%;
-    }
-    .servicios-der-mob img{
+    #servicios{
+        width: 96%;
         display: flex;
-        gap: 5%;
-        width: 100%;
-        border-radius: 32px;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
     }
     .servicios-izq{
         display: none;
-        text-align: center;
-        padding: 80px 0 0 0;
-        gap: 5%;
     }
-    .servicios-izq img{
-        display: flex;
-        gap: 5%;
-        width: 100%;
-        border-radius: 32px;
+    .servicios-der{
+        display: grid;
+        width: 40%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .servicios-der-mob{
+        display: grid;
+        width: 40%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
     }
     .servicios-der img{
-        display: flex;
-        gap: 5%;
         width: 100%;
         border-radius: 32px;
     }
-  }
+    .servicios-izq img{
+        width: 100%;
+        border-radius: 32px;
+    }
+    .servicios-der-mob img{
+        width: 100%;
+        border-radius: 32px;
+    }
+    /* #clientes{
+        width: 96%;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 80px;
+    }
+    #clientes .titulo{
+        width: 96%;
+        display: grid;
+        justify-items: center;
+        gap: 8%;
+    }
+    #clientes button{
+        width: auto;
+        display: grid;
+        justify-items: center;
+    }
+    .clientes-der{
+        display: none
+    }
+    .clientes-izq{
+        display: grid;
+        width: 20%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .clientes-izq-mob{
+        display: grid;
+        width: 20%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .clientes-izq img{
+        width: 100%;
+        border-radius: 32px;
+    }
+    .clientes-izq-mob img{
+        width: 100%;
+        border-radius: 32px;
+    } */
+}
   
 @media (max-width: 550px) {
     header{
         width:80%;
         height:80%;
+        margin-bottom:60px ;
         padding: 10% 0;
         background-color: rgba(58, 58, 58, 0.30);
     }
-    header nav{
-        position: absolute;
-        width: 60%;
-        background-color: #393939;
-        z-index: 999;
+    .slide-mobile{
+        display: flex;
+        width: 80%;
     }
-    header nav ul{
-        justify-content: unset;
-        gap: 50%;
-        padding: 25% 0 0 10%;
-
-    }
-    header nav ul li a{
-        font-weight: 800;
+    .slide{
+        display: none;
     }
     hero h1{
         width: 80%;
@@ -442,6 +484,7 @@ footer div{
     }
     .titulo{
         width: 96%;
+        padding-top: 240px;
     }
     section{
         text-align: center;
@@ -450,6 +493,7 @@ footer div{
         gap: 80px;
     }
     .servicios-der{
+        width: 96%;
         display: grid;
         text-align: center;
         padding: 80px 0 0 0;
@@ -457,15 +501,29 @@ footer div{
     }
     .servicios-izq{
         display: none;
+    }
+    .servicios-izq img{
+        display: flex;
+        gap: 5%;
+        width: 96%;
+        border-radius: 32px;
+    }
+    .servicios-der-mob{
+        width: 96%;
+        display: grid;
         text-align: center;
         padding: 80px 0 0 0;
         gap: 5%;
     }
-    .servicios-izq img{
-        width: 96%;
+    .servicios-der-mob img{
+        display: flex;
+        gap: 5%;
+        width: 100%;
         border-radius: 32px;
     }
     .servicios-der img{
+        display: flex;
+        gap: 5%;
         width: 96%;
         border-radius: 32px;
     }
