@@ -1,5 +1,6 @@
 html{
     scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 body{
     z-index: 1; 
@@ -11,7 +12,6 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    overflow-x: hidden;
 }
 h4{
     font-family: 'Montserrat', sans-serif;
@@ -163,7 +163,7 @@ button{
     padding: 8px;
     background-color: #393939;
     color: white;
-    padding: 1% 4%;
+    padding: 0% 4%;
     border: solid 2px #68D7E0;
     border-radius: 12px;
     box-shadow: 0px 4px 10px 0px rgba(104, 215, 224, 0.20);
@@ -481,6 +481,7 @@ footer div{
     button{
         width: auto;
         height: auto;
+        padding: 1% 4%;
     }
     .titulo{
         width: 96%;
