@@ -1,6 +1,5 @@
 html{
     scroll-behavior:smooth;
-    overflow-x: hidden;
 }
 body{
     z-index: 1; 
@@ -67,7 +66,6 @@ h3{
     position: fixed;
     bottom: 0;
 }
-
 .elemento-uno{
     display: grid;
     position: absolute;
@@ -87,6 +85,22 @@ h3{
     border-radius: 100%;
     background: linear-gradient(223deg, #FCB556 0%, #F95545 100%);
     filter: blur(150px);
+    z-index: -1;
+}
+.fondo{
+    display: grid;
+    position: absolute;
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: end;
+}
+.fondo img{
+    display: grid;
+    position: absolute;
+    float: right;
+    width: 420px;
+    margin-right: 0;
     z-index: -1;
 }
 .elemento-tres{
