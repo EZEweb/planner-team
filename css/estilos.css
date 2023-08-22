@@ -386,13 +386,13 @@ footer div{
         font-weight: 800;
     }
     #servicios .titulo{
-        width: 96%;
+        width: 100%;
         display: grid;
         justify-items: center;
         gap: 8%;
     }
     #servicios{
-        width: 96%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         padding: 0;
@@ -539,14 +539,14 @@ footer div{
     .servicios-der img{
         display: flex;
         gap: 5%;
-        width: 96%;
+        width: 100%;
         border-radius: 32px;
     }
     .clientes-der{
         display: none;
     }
     .clientes-izq-mob img{
-        width: 96%;
+        width: 100%;
         border-radius: 0 180px 0 180px;
     }
     .clientes-izq-mob{
@@ -563,10 +563,10 @@ footer div{
         gap: 40px;
     }  
     .clientes-der img{
-        width: 96%;
+        width: 100%;
     }
     .clientes-izq img{
-        width: 96%;
+        width: 100%;
     }
     .clientes-der button{
         width: 75px;
