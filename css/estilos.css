@@ -1,5 +1,6 @@
 html{
     scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 body{
     z-index: 1; 
@@ -386,7 +387,7 @@ footer div{
         font-weight: 800;
     }
     #servicios .titulo{
-        width: 100%;
+        width: 96%;
         display: grid;
         justify-items: center;
         gap: 8%;
@@ -427,50 +428,6 @@ footer div{
         width: 100%;
         border-radius: 32px;
     }
-    /* #clientes{
-        width: 96%;
-        padding: 0;
-        margin: 0;
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 80px;
-    }
-    #clientes .titulo{
-        width: 96%;
-        display: grid;
-        justify-items: center;
-        gap: 8%;
-    }
-    #clientes button{
-        width: auto;
-        display: grid;
-        justify-items: center;
-    }
-    .clientes-der{
-        display: none
-    }
-    .clientes-izq{
-        display: grid;
-        width: 20%;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-    .clientes-izq-mob{
-        display: grid;
-        width: 20%;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-    .clientes-izq img{
-        width: 100%;
-        border-radius: 32px;
-    }
-    .clientes-izq-mob img{
-        width: 100%;
-        border-radius: 32px;
-    } */
 }
   
 @media (max-width: 550px) {
@@ -590,7 +547,7 @@ footer div{
         display: grid;
         justify-content: center;
         text-align: center;
-        width:96%;
+        width:98%;
         height: 100%;
         padding: 10% 0;
         margin: 1%;
